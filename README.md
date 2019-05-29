@@ -1,5 +1,5 @@
 # Tic-tac-toe
-This game of Tic Tac Toe was the first Python program that I had every written.
+This game of Tic Tac Toe was the first Python program that I had ever written.
 
 Although pretty simple, it was a very significant achievement for me at the time. Having taught myself Python in my free time, I was amazed that after a mere few weeks I was able to build something complete, something that worked, and something I could actually show to my family and friends without having to get technical.
 
