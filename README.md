@@ -6,4 +6,7 @@ Although pretty simple, it was a very significant achievement for me at the time
 Seeing what I was able to build from scratch in such a short period of time felt great and only made me more hungry to continue learning and improving my skills in Python, as well as other programming languages.
 
 # Description
-This program contains a simple 2-player game of Tic Tac Toe, which can be downloaded and run straight on the Terminal on Mac or the Command Prompt on Windows.
+This program contains a simple 2-player game of Tic Tac Toe, which can be downloaded and run straight on the Terminal on Mac or the Command Prompt on Windows. 
+
+I built this program as part of the "Complete Python Bootcamp: Go from zero to hero in Python 3" course on Udemy created by Jose Portilla, Pierian Data Inc.
+
