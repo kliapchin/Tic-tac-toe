@@ -74,10 +74,12 @@ def replay():
 if __name__ == '__main__':
     print('Welcome to Tic Tac Toe!')
 
-# while playing
 while True:
+    # Sets up the board
     theboard = [' '] *10
+    # Assigns markers to each player
     player1_marker, player2_marker = player_input()
+    # Chooses the player who goes first
     turn = choose_first()
     print(f'{turn} will go first!')
     
@@ -87,6 +89,7 @@ while True:
     else:
         game_on == False
 
+    # The game begins
     while game_on:
         #Player 1 Turn
         if turn == 'Player 1':
@@ -94,14 +97,17 @@ while True:
             position = player_choice(theboard)
             place_marker(theboard,player1_marker,position)
             
+            # Checks the board to see whether there is a win
             if win_check(theboard,player1_marker):
                 display_board(theboard)
                 print('Congratulations, Player 1 is the winner!')
                 game_on = False
+            # Checks the board to see whether there is a tie
             elif not win_check(theboard,player1_marker) and full_board_check(theboard):
                 display_board(theboard)
                 print("It's a tie!")
                 break
+            # Turns to Player 2 for the next turn
             else:
                 turn = 'Player 2'
         
@@ -112,14 +118,17 @@ while True:
             position = player_choice(theboard)
             place_marker(theboard,player2_marker,position)
             
+            # Checks the board to see whether there is a win
             if win_check(theboard,player2_marker):
                 display_board(theboard)
                 print('Congratulations, Player 2 is the winner!')
                 game_on = False
+            # Checks the board to see whether there is a tie
             elif not win_check(theboard,player2_marker) and full_board_check(theboard):
                 display_board(theboard)
                 print("It's a tie!")
                 break
+            # Turns to Player 1 for the next turn
             else:
                 turn = 'Player 1'
 
