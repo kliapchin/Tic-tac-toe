@@ -1,5 +1,7 @@
 from IPython.display import clear_output
 
+### Defining functions for the game
+# This function will display the board
 def display_board(board):
     clear_output()
     print('   |   |   ')
@@ -12,6 +14,7 @@ def display_board(board):
     print(f' {board[7]} | {board[8]} | {board[9]} ')
     print('   |   |   ')
 
+# This function will assign each player a marker
 def player_input():
     marker = ''
     # Keep asking to choose X or O
@@ -27,9 +30,11 @@ def player_input():
         player2 = 'X'
     return (player1, player2)
 
+# This function will place the marker on the board after each turn
 def place_marker(board, marker, position):
     board[position] = marker
 
+# This function will check the board to see whether one of the players has won
 def win_check(board, mark):
     return ((board[1] == mark and board[2] == mark and board[3] == mark) or
     (board[4] == mark and board[5] == mark and board[6] == mark) or
@@ -65,11 +70,11 @@ def replay():
     play_again = input('Do you want to play again?: ')
     return play_again.lower()[0] == 'y'
 
-
+### The actual game
 if __name__ == '__main__':
     print('Welcome to Tic Tac Toe!')
 
-#while True:
+# while playing
 while True:
     theboard = [' '] *10
     player1_marker, player2_marker = player_input()
